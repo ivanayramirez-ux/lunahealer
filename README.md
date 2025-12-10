@@ -1,8 +1,10 @@
 
-</head>
-<body>
-  <h1>LunaHealer</h1>
-  <p>
+<table>
+  <tr>
+    <td><h1>LunaHealer</h1></td>
+    <td><img src="https://imagur.org/i/KYpv5RFU" alt="Astronaut" width="150"></td>
+  </tr>
+</table>
     A self-healing locator engine for UI automation with AI assistance, fallback strategies,
     and full end-to-end validation.
   </p>
@@ -81,22 +83,23 @@
     healing layers function correctly end-to-end.
   </p>
 
-  <h3>5. Healing Event Reporting</h3>
-  <p>Every locator lookup produces a structured event including:</p>
-  <ul>
-    <li>Key name</li>
-    <li>Strategy used (Primary, ALT, Fallback, AI)</li>
-    <li>Locator chosen</li>
-    <li>Success or failure</li>
-  </ul>
-  <p>
-    These events are aggregated into <code>lunahealer-healing-report.json</code> under the
-    <code>target/</code> directory.
-  </p>
-  <p>
-    This artifact gives full observability into healing performance and can be integrated with
-    CI pipelines for debugging, analytics, or enforcing minimum healing coverage.
-  </p>
+ <h3>5. Healing Event Reporting</h3>
+<p>Every locator lookup produces a structured event including:</p>
+<ul>
+  <li>Key name</li>
+  <li>Strategy used (Primary, ALT, Fallback, AI)</li>
+  <li>Locator chosen</li>
+  <li>Success or failure</li>
+</ul>
+<p>
+  These events are written into a <code>lunahealer-healing-report.json</code> file
+  generated at runtime inside the Maven <code>target/</code> directory. 
+  This directory is intentionally excluded from version control.
+</p>
+<p>
+  The report provides full observability into locator recovery behavior and can be
+  consumed by CI pipelines for debugging, analytics, or enforcing minimum healing coverage.
+</p>
 
  
   <h2>Technology Stack</h2>

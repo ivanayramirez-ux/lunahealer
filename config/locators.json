@@ -1,0 +1,444 @@
+{
+  "login.email": {
+    "description": "Email field on login page",
+    "semanticHint": "Email",
+    "primary": {
+      "type": "id",
+      "value": "login-email"
+    },
+    "alternatives": [
+      {
+        "type": "css",
+        "value": "input[name='email']"
+      },
+      {
+        "type": "xpath",
+        "value": "//input[@type='email']"
+      }
+    ]
+  },
+
+  "login.password": {
+    "description": "Password field on login page",
+    "semanticHint": "Password",
+    "primary": {
+      "type": "id",
+      "value": "login-password"
+    },
+    "alternatives": [
+      {
+        "type": "css",
+        "value": "input[name='password']"
+      }
+    ]
+  },
+
+  "login.submit": {
+    "description": "Login button on login page",
+    "semanticHint": "TotallyWrongHint",
+    "primary": {
+      "type": "id",
+      "value": "login-submit-BROKEN"
+    },
+    "alternatives": [
+      {
+        "type": "css",
+        "value": "button[data-broken='true']"
+      },
+      {
+        "type": "xpath",
+        "value": "//button[@id='wrong-button']"
+      }
+    ]
+  },
+
+  "register.firstName": {
+    "description": "First name input on registration form",
+    "semanticHint": "input first name",
+    "primary": {
+      "type": "id",
+      "value": "first-name"
+    },
+    "alternatives": []
+  },
+
+  "register.lastName": {
+    "description": "Last name input on registration form",
+    "semanticHint": "input last name",
+    "primary": {
+      "type": "id",
+      "value": "last-name"
+    },
+    "alternatives": []
+  },
+
+  "register.email": {
+    "description": "Email field on registration form",
+    "semanticHint": "email",
+    "primary": {
+      "type": "id",
+      "value": "register-email-BROKEN"
+    },
+    "alternatives": [
+      {
+        "type": "css",
+        "value": "input[type='email']"
+      }
+    ]
+  },
+
+  "register.confirmEmail": {
+    "description": "Confirm email input on registration form",
+    "semanticHint": "confirm email input",
+    "primary": {
+      "type": "id",
+      "value": "confirm-email"
+    }
+  },
+
+  "register.password": {
+    "description": "Password field on registration form",
+    "semanticHint": "password",
+    "primary": {
+      "type": "id",
+      "value": "password"
+    },
+    "alternatives": []
+  },
+
+  "register.confirmPassword": {
+    "description": "Confirm password input on registration form",
+    "semanticHint": "confirm password input",
+    "primary": {
+      "type": "id",
+      "value": "confirm-password"
+    }
+  },
+
+  "register.terms": {
+    "description": "Terms and Conditions checkbox on registration form",
+    "semanticHint": "terms and conditions checkbox",
+    "primary": {
+      "type": "id",
+      "value": "terms-checkbox"
+    }
+  },
+
+  "register.submit": {
+    "description": "Submit registration button",
+    "semanticHint": "submit register button",
+    "primary": {
+      "type": "id",
+      "value": "register-submit-BROKEN"
+    },
+    "alternatives": [
+      {
+        "type": "css",
+        "value": "button[data-test='register-submit']"
+      }
+    ]
+  },
+
+  "register.successBanner": {
+    "description": "Success banner after registration",
+    "semanticHint": "registration success message",
+    "primary": {
+      "type": "id",
+      "value": "register-banner"
+    },
+    "alternatives": [
+      {
+        "type": "css",
+        "value": "div#register-banner.auth-banner-success"
+      }
+    ]
+  },
+
+  "index.signIn": {
+    "description": "Sign in button on landing page",
+    "semanticHint": "Sign in button on landing page",
+    "primary": {
+      "type": "css",
+      "value": "a[href='login.html']"
+    },
+    "alternatives": [
+      {
+        "type": "xpath",
+        "value": "//a[contains(normalize-space(.), 'Sign in')]"
+      }
+    ]
+  },
+
+  "dashboard.transferBtn": {
+    "description": "Transfer funds CTA on dashboard",
+    "semanticHint": "Transfer funds button on dashboard",
+    "primary": {
+      "type": "id",
+      "value": "transfer-btn-BROKEN"
+    },
+    "alternatives": []
+  },
+
+  "dashboard.logoutBtn": {
+    "description": "Logout button on dashboard",
+    "semanticHint": "Log out button",
+    "primary": {
+      "type": "id",
+      "value": "logout-btn"
+    }
+  },
+
+  "dashboard.profileLink": {
+     "description": "Quick link to profile page",
+     "semanticHint": "View profile link",
+     "primary": {
+       "type": "css",
+       "value": "a.dash-quick-link[data-quick-link='profile-broken']"
+     },
+     "alternatives": [
+       {
+         "type": "css",
+         "value": "a.dash-quick-link[data-quick-link='profile']"
+       }
+     ]
+   },
+
+  "dashboard.securityLink": {
+    "description": "Quick link to security page",
+    "semanticHint": "Security & settings link",
+    "primary": {
+      "type": "css",
+      "value": "a.dash-quick-link[data-quick-link='security']"
+    }
+  },
+
+  "dashboard.checkingBalance": {
+    "description": "Balance cell for Everyday Checking in accounts table",
+    "semanticHint": "Everyday Checking balance",
+    "primary": {
+      "type": "xpath",
+      "value": "//tbody[@id='accounts-tbody']/tr[td[1][contains(.,'Everyday Checking')]]/td[3]"
+    }
+  },
+
+  "dashboard.savingsBalance": {
+    "description": "Balance cell for High-Yield Savings in accounts table",
+    "semanticHint": "High-Yield Savings balance",
+    "primary": {
+      "type": "xpath",
+      "value": "//tbody[@id='accounts-tbody']/tr[td[1][contains(.,'High-Yield Savings')]]/td[3]"
+    }
+  },
+
+  "dashboard.rockyCard": {
+     "description": "RockyInvest promo card",
+     "semanticHint": "RockyInvest card on dashboard",
+     "primary": {
+       "type": "id",
+       "value": "rocky-card-BROKEN"
+     },
+     "alternatives": [
+       {
+         "type": "id",
+         "value": "rocky-card"
+       }
+     ]
+   },
+
+  "transfer.fromAccount": {
+    "description": "From account dropdown on transfer page",
+    "semanticHint": "From account select",
+    "primary": {
+      "type": "id",
+      "value": "from-account"
+    }
+  },
+
+  "transfer.toAccount": {
+    "description": "To account dropdown on transfer page",
+    "semanticHint": "To account select",
+    "primary": {
+      "type": "id",
+      "value": "to-account"
+    }
+  },
+
+  "transfer.amount": {
+    "description": "Amount input on transfer page",
+    "semanticHint": "Transfer amount input",
+    "primary": {
+      "type": "id",
+      "value": "amount"
+    }
+  },
+
+  "transfer.banner": {
+    "description": "Transfer result banner",
+    "semanticHint": "Transfer confirmation banner",
+    "primary": {
+      "type": "id",
+      "value": "transfer-banner"
+    }
+  },
+
+  "transfer.submit": {
+    "description": "Submit transfer button",
+    "semanticHint": "Submit transfer button",
+    "primary": {
+      "type": "id",
+      "value": "transfer-submit-BROKEN"
+    },
+    "alternatives": [
+      {
+        "type": "css",
+        "value": "#transfer-form button[type='submit']"
+      }
+    ]
+  },
+
+  "transfer.backToDashboard": {
+    "description": "Return to dashboard link on transfer page",
+    "semanticHint": "Back to dashboard link",
+    "primary": {
+      "type": "css",
+      "value": "a[href='dashboard-broken.html']"
+    },
+    "alternatives": [
+      {
+        "type": "css",
+        "value": "a[href='dashboard.html']"
+      }
+    ]
+  },
+
+
+
+   "profile.marketingToggle": {
+       "description": "Marketing notifications toggle",
+       "semanticHint": "Product news offers toggle",
+       "primary": {
+         "type": "css",
+         "value": "input[type='checkbox'][data-pref='marketing-broken']"
+       },
+       "alternatives": [
+         {
+           "type": "css",
+           "value": "input[type='checkbox'][data-pref='marketing']"
+         }
+       ]
+     },
+
+	 "profile.contactEditBtn": {
+	    "description": "Edit contact info button",
+	    "semanticHint": "Edit contact button",
+	    "primary": {
+	      "type": "id",
+	      "value": "profile-contact-edit-BROKEN"
+	    }
+	  },
+
+  "profile.phoneInput": {
+    "description": "Mobile phone input field",
+    "semanticHint": "Mobile phone field",
+    "primary": {
+    "type": "id",
+      "value": "pf-phone"
+    }
+  },
+
+  "profile.contactSaveBtn": {
+      "description": "Save contact info button",
+      "semanticHint": "Save changes button in profile contact actions",
+      "primary": {
+        "type": "id",
+        "value": "profile-contact-save-BROKEN"
+      }
+    },
+	
+  "profile.contactMessage": {
+    "description": "Profile save message",
+    "semanticHint": "Profile saved message",
+    "primary": {
+      "type": "id",
+      "value": "profile-contact-message"
+    }
+  },
+
+  "profile.backToDashboard": {
+      "description": "Back to dashboard link inside profile header",
+      "semanticHint": "Back to dashboard link",
+      "primary": {
+        "type": "css",
+        "value": "a.profile-back-link-inside-broken"
+      }
+    },
+
+	"security.mfaToggle": {
+	  "description": "MFA toggle checkbox",
+	  "semanticHint": "Multi-factor authentication toggle",
+	  "primary": {
+	    "type": "css",
+	    "value": "input[type='checkbox'][data-sec-toggle='mfa-broken']"
+	  },
+	  "alternatives": [
+	    {
+	      "type": "css",
+	      "value": "input[type='checkbox'][data-sec-toggle='mfa']"
+	    }
+	  ]
+	},
+	
+  "security.alertsEmailOnly": {
+    "description": "Login alerts Email only radio",
+    "semanticHint": "Email only alerts",
+    "primary": {
+      "type": "css",
+      "value": "label[data-alert-option='email'] input[type='radio']"
+    }
+  },
+
+  "security.saveBtn": {
+    "description": "Save security settings button",
+    "semanticHint": "Save security settings",
+    "primary": {
+      "type": "id",
+      "value": "sec-save"
+    }
+  },
+
+  "security.message": {
+    "description": "Security settings status message",
+    "semanticHint": "Security settings message",
+    "primary": {
+      "type": "id",
+      "value": "sec-message"
+    }
+  },
+
+  "security.backToDashboard": {
+    "description": "Back to dashboard link on security page",
+    "semanticHint": "Back to dashboard link",
+    "primary": {
+      "type": "css",
+      "value": "a.tx-back[href='dashboard.html']"
+    }
+  },
+
+  "rocky.modalContinue": {
+    "description": "Continue to RockyInvest button in modal",
+    "semanticHint": "Continue button in RockyInvest modal",
+    "primary": {
+      "type": "css",
+      "value": ".rocky-modal a.btn.btn-primary.broken"
+    }
+  },
+
+  "rocky.heading": {
+    "description": "RockyInvest offline heading",
+    "semanticHint": "RockyInvest interstellar link offline heading",
+    "primary": {
+      "type": "id",
+      "value": "rocky-heading"
+    }
+  }
+}

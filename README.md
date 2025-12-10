@@ -5,9 +5,6 @@
     <td><img src="https://imagur.org/i/KYpv5RFU" alt="Astronaut" width="150"></td>
   </tr>
 </table>
-    A self-healing locator engine for UI automation with AI assistance, fallback strategies,
-    and full end-to-end validation.
-  </p>
 
   <h2>Overview</h2>
   <p>
@@ -129,4 +126,43 @@
     metadata can be applied to significantly reduce test flakiness.
   </p>
 </body>
+
+```mermaid
+flowchart TD
+
+    %% --- Test Execution Layer ---
+    subgraph TestExecution["Test Execution (TestNG)"]
+        A1["User Test Steps"]
+        A2["LunaHealer.find(key)"]
+    end
+
+    %% --- Locator Store ---
+    subgraph LocatorStore["LocatorStore + JSON Profiles"]
+        B1["Primary Locator"]
+        B2["Alternative Locators"]
+        B3["Semantic Hint"]
+    end
+
+    %% --- Healing Engine ---
+    subgraph HealingEngine["LunaHealer Healing Engine"]
+        C1["Primary Attempt"]
+        C2["ALT Locator Loop"]
+        C3["SmartFallback (Semantic Token Match)"]
+        C4["AI Resolver (Mock AI Client)"]
+    end
+
+    %% --- Browser DOM ---
+    subgraph Browser["Browser DOM (Selenium)"]
+        D1["Element Search & Validation"]
+    end
+
+    A2 --> B1
+    B1 --> C1
+    C1 -->|Fail| C2
+    C2 -->|Fail| C3
+    C3 -->|Fail| C4
+    C4 -->|AI Suggestion| D1
+    D1 -->|Found Element| A1
+```
+
 </html>

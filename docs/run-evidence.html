@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LunaHealer – TestNG Healing Evidence</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f8f9fb;
+            color: #1f2937;
+            margin: 0;
+            padding: 32px;
+        }
+
+        h1 {
+            margin-bottom: 8px;
+        }
+
+        p.subtitle {
+            color: #4b5563;
+            margin-top: 0;
+            margin-bottom: 32px;
+            max-width: 900px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 24px;
+        }
+
+        figure {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 16px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+        }
+
+        figure img {
+            width: 100%;
+            border-radius: 6px;
+            border: 1px solid #e5e7eb;
+        }
+
+        figcaption {
+            margin-top: 12px;
+            font-size: 0.9rem;
+            color: #374151;
+            line-height: 1.4;
+        }
+
+        .caption-title {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        footer {
+            margin-top: 48px;
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>LunaHealer – TestNG Self-Healing Evidence</h1>
+<p class="subtitle">
+    Screenshots from real Selenium + TestNG executions demonstrating LunaHealer’s
+    layered locator recovery strategy: Primary → ALT → SmartFallback → AI Resolver.
+    All tests passed with full observability.
+</p>
+
+<section class="gallery">
+
+    <figure>
+        <img src="https://i.postimg.cc/y6GfpwgD/Luna-Healer-Test-NG-Run.png"
+             alt="Login flow healed using AI resolver">
+        <figcaption>
+            <span class="caption-title">Login Flow – AI Resolver Healing</span>
+            Primary locator, alternatives, and semantic fallback all failed.
+            LunaHealer escalated to the AI resolver, which correctly identified
+            <code>button[type='submit']</code> and healed the test.
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="https://i.postimg.cc/9MnBS7fS/Luna-Healer-Test-NG-Run-2.png"
+             alt="Dashboard and transfer flow healing">
+        <figcaption>
+            <span class="caption-title">Dashboard & Transfer – ALT and SmartFallback</span>
+            Broken primary locators recovered through valid CSS alternatives and
+            semantic token matching without invoking AI.
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="https://i.postimg.cc/sg4qLTRR/Luna-Healer-Test-NG-Run-3.png"
+             alt="Profile and contact settings healing">
+        <figcaption>
+            <span class="caption-title">Profile & Contact Settings – SmartFallback</span>
+            Locator healing based on descriptive semantic hints such as button text
+            and intent when IDs and CSS selectors were intentionally broken.
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="https://i.postimg.cc/D0GYPgcQ/Luna-Healer-Test-NG-Run-4.png"
+             alt="End-to-end scenario completion and report generation">
+        <figcaption>
+            <span class="caption-title">End-to-End Completion & Report Generation</span>
+            Full E2E scenario completed successfully. Healing report JSON generated
+            under <code>target/lunahealer-healing-report.json</code> with detailed
+            resolution metadata.
+        </figcaption>
+    </figure>
+
+</section>
+
+<footer>
+    Evidence captured from real TestNG executions.  
+    LunaHealer prioritizes deterministic recovery before AI escalation for
+    stability, transparency, and CI safety.
+</footer>
+
+</body>
+</html>

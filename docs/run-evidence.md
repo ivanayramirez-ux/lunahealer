@@ -1,4 +1,4 @@
-# LunaHealer – TestNG Self-Healing Evidence
+# LunaHealer - TestNG Self-Healing Evidence
 
 Screenshots from real Selenium + TestNG executions demonstrating LunaHealer’s layered
 locator recovery strategy:
